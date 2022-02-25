@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="ch">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+        <title>wecha</title>
+        <!-- 引入 WeUI   -->
+        <link rel="stylesheet" href="../css/weui.css"/>
+		<link rel="stylesheet" href="../css/weuix.css"/>
+		<link rel="stylesheet" href="../css/style.css"/>
+        <!-- 引入 swiper -->
+        <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
+        <link rel="stylesheet" href="../css/animate.min.css">
+        <script src="../js/zepto.min.js"></script> 
+		<script src="../js/zepto.weui.js"></script> 
+    </head>
+<body>
+ 
+<div class="weui-tab  item1-bac" id="weuitab"  ><!--继承body 、height100%-->
+    <div class="swiper-container2 weui-tab__panel" ><!--Swiper的容器-->
+       <div class="swiper-wrapper" ><!--触控的对象--> 
+          
+          <!----------------weui-panel1----首页-------------------->          
+          <div class="swiper-slide" ><!--切换的滑块-->
+				<div class="page-bd"> 
+					
+					<div  class="title">聊天</div>
+					
+				   <div class="weui-search-bar weui-search-bar_focusing" id="searchBar">
+				       <form class="weui-search-bar__form" action="#">
+				           <div class="weui-search-bar__box">
+				               <i class="weui-icon-search"></i>
+				               <input class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="" type="search">
+				               <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+				           </div>
+				           <label class="weui-search-bar__label" id="searchText" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+				               <i class="weui-icon-search"></i>
+				               <span>搜索</span>
+				           </label>
+				       </form>
+				       <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+				   </div>
+					
+				    <div class="weui-cells" style="margin-top:0.5rem;">
+						<!---->
+				        <div class="weui-cell weui-cell_swiped"  id="test">
+				        	<div class="weui-cell__bd">	
+				        		<div class="weui-cell">
+				        			<div class="weui-cell__hd">
+				        				<div class="weui-reddot"><img src="../images/tx.jpg" alt=""  class="tx"></div>
+				        			</div>
+				        			<div class="weui-cell__bd">
+				        				<p  class="main-name marginl-1">胡适康</p>
+				        				<span  class="main-his marginl-1">聊天记录</span>
+				        			</div>
+				        			<div class="weui-cell__ft"><span class="main-time">08:00</span></div>
+				        			 
+				        		</div>
+				        	</div>
+				        	 <div class="weui-cell__ft"  >
+				        		<a class="weui-swiped-btn weui-swiped-btn_warn delete-swipeout line-height"   href="javascript:">删除</a>
+				        		<a class="weui-swiped-btn weui-swiped-btn_default close-swipeout line-height"   href="javascript:">关闭</a>
+				        	   </div>	
+				        </div>	
+						 
+						 
+				    </div>
+				</div>	
+          </div>
+          
+          <!----------------weui-panel2-------地图----------------->
+          <div class="swiper-slide"><!--切换的滑块-->
+                 <div  class="title">通讯录</div>
+          </div>
+          
+          <!----------------weui-panel2-------地图----------------->
+          <div class="swiper-slide"><!--切换的滑块-->
+              <div  class="title">我的</div>
+          </div>
+      </div> 
+   </div>
+    
+    <!----------------weui-tabbar------------------------>
+    <div class="weui-tabbar swiper-no-swiping">
+        <a href="javascript:;" class="weui-tabbar__item weui-bar__item_on" id="tabbar1" flag="1">
+            <span class="icon icon-80 coin-sel" id="item1"></span>
+            <p class="weui-tabbar__label">首页</p>
+        </a>
+        <a href="javascript:;" class="weui-tabbar__item" id="tabbar2" flag="2">
+            <span class="icon icon-99 coin-size" id="item2"></span>
+            <p class="weui-tabbar__label">通讯录</p>
+        </a>
+        <a href="javascript:;" class="weui-tabbar__item" id="tabbar3" flag="3">
+			<span class="icon icon-85 coin-size" id="item3"></span>
+            <p class="weui-tabbar__label">我的</p>
+        </a>
+    </div>
+ 
+    <script type="text/javascript">
+    $(function(){
+        $('.weui-tabbar__item').on('click', function () {
+            $(this).addClass('weui-bar__item_on').siblings('.weui-bar__item_on').removeClass('weui-bar__item_on');
+			//点击底部导航图标转到指定页面
+			mySwiper2.slideTo($(this).attr('id').charAt(6)-1,500,false);//索引编号，时间延时，onSlideChange回调函数
+		    changeico($(this).attr('flag'));  
+		});
+    });
+	
+	</script>
+</div> 
+    <!-- 引入 swiper -->
+     <script src="../js/swiper-3.4.2.min.js"></script> 
+     <script src="../js/swiper.animate1.0.2.min.js"></script>
+     <script type="text/javascript">
+	    //首页图片js
+	    var mySwiper = new Swiper('.swiper-container',{
+		lazyLoading : true,//懒惰加载
+		autoplay: 10000,//5s自动滑动
+		autoplayDisableOnInteraction : true,//点击取消自动滑动
+		zoom : true,//调焦
+		loop : true,//循环
+		pagination : '.swiper-pagination',//圆点分页器
+		paginationClickable :true,//点击圆点切换
+		paginationHide :true,//圆点自动隐藏
+		lazyLoading : true,//延迟加载
+		/////////////////////////////
+		onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+		swiperAnimateCache(swiper); //隐藏动画元素 
+		swiperAnimate(swiper); //初始化完成开始动画
+		}, 
+		onSlideChangeEnd: function(swiper){ 
+			swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+		},
+		  }); 
+		//////////////////////////////////////////////////////
+		//页面导航js
+		var mySwiper2 = new Swiper('.swiper-container2', {
+		//autoplay: 5000,//可选选项，自动滑动
+		touchRatio : 0.5,
+		onSlideChangeStart: function(swiper){
+			switch(swiper.activeIndex){//滑动页面时底部导航文字也跟着激活
+				case 0: $("#tabbar1").trigger("click");changeico(1);break;
+				case 1: $("#tabbar2").trigger("click");changeico(2);break;
+				case 2: $("#tabbar3").trigger("click");changeico(3);break;
+			}
+			//alert(swiper.activeIndex);
+				
+		},
+	   
+
+		
+		})
+		
+		
+		function changeico(e){
+			if(e==1){
+				$("#item1").attr("class","icon icon-79  coin-sel");
+				$("#item2").attr("class","icon icon-99  coin-size");
+				$("#item3").attr("class","icon icon-85  coin-size");
+			}else if(e==2){
+				$("#item1").attr("class","icon icon-80  coin-size");
+				$("#item2").attr("class","icon icon-100  coin-sel");
+				$("#item3").attr("class","icon icon-85  coin-size");
+			}else if(e==3){
+				$("#item1").attr("class","icon icon-80  coin-size");
+				$("#item2").attr("class","icon icon-99  coin-size");
+				$("#item3").attr("class","icon icon-84  coin-sel");
+			}
+			
+			
+		}
+		
+		//
+		//var mySwiper3 = new Swiper('.swiper-container3', {
+		//autoplay: 5000,//可选选项，自动滑动
+		//})
+		//mySwiper3.lockSwipes();
+	</script>
+    <script><!--聊天左滑事件-->
+		 /*   js加载进来用
+		    $('.weui-cell_swiped').swipeout()
+		    初始化
+		    $('.weui-cell_swiped').swipeout('close') 关闭
+		    */
+		 
+		    $('.delete-swipeout').click(function () {
+		        $(this).parents('.weui-cell').remove()
+		    })
+		    $('.close-swipeout').click(function () {
+		        $(this).parents('.weui-cell').swipeout('close')
+		    })
+		
+		 $('.weui-cell_swiped').swipeout('open')
+		  $(document).on("swipeout-open",'.weui-cell_swiped',function(){
+		           //监听打开触发
+		        })
+		        $(document).on("swipeout-close",'.weui-cell_swiped',function(){
+		            //监听关闭触发
+		        })
+				
+				
+		 $("#test").on("click",function(){
+			 window.location.href="online";
+		 });		
+				
+		
+	</script>
+    
+    
+    </body>
+</html>

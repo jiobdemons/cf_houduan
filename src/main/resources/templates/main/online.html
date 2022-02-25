@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	    <!-- 引入 WeUI   -->
+	    <link rel="stylesheet" href="../css/weui.css"/>
+	    <link rel="stylesheet" href="../css/weuix.css"/>
+	    <link rel="stylesheet" href="../css/style.css"/>
+	    <!-- 引入 swiper -->
+	    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
+	    <link rel="stylesheet" href="../css/animate.min.css">
+	    <script src="../js/zepto.min.js"></script> 
+	    <script src="../js/zepto.weui.js"></script> 
+	</head>
+	<body class=" item1-bac">
+		 <div class="weui-header weui-btn_default "  > 
+		   <div class="weui-header-left"> <a class="icon icon-109  f-black" href="index.html"> </a>  </div>
+		    <h1 class="weui-header-title f-black">胡适康</h1>
+		     <div class="weui-header-right"><a class="icon icon-83 f-black"> </a></div> 
+		 </div>
+		 <div style="padding:2%;position: absolute;overflow: auto;height: 85%;" id="list">
+			 
+			<div style="width:2.5rem;height:2.5rem;float: left;">
+				 
+				<img src="../images/tx.jpg" alt=""  class="tx">
+			</div>
+			<div class="tip left" style="margin-left:20px;float: left;margin-top: 0px;padding: 0.3rem;">
+				<img src="../images/lalal.jpg"  style="width:10rem;height:20rem;"/>
+			</div>
+			
+			<div style="width: 100%;height: 1px;float: left;"><!--占位--></div>  
+		    
+			<div style="width:2.5rem;height:2.5rem;float: left;">
+				 
+				<img src="../images/tx.jpg" alt=""  class="tx">
+			</div>
+			<div class="tip left" style="margin-left:20px;float: left;margin-top: 0px;padding: 0.3rem;">
+				<span style=" word-break:normal; width:auto; display:block; white-space:pre-wrap;word-wrap : break-word ;overflow: hidden ;max-width:15rem;">你说我帅不帅</span>
+			</div>
+			
+			<div style="width: 100%;height: 1px;float: left;"><!--占位--></div> 
+			 
+			
+				
+			
+			
+				
+			
+			
+			 
+		 </div>
+		 
+		 
+		 <div style="background-color: #f8f8f8;width: 100%;position: fixed;height:2.5rem;border: #E0E0E0 solid 1px;bottom:0px;">
+			<input type="text" id="content" name="content" class="text" />
+			<span class="icon icon-5 send" id="send"></span>  
+		 </div>
+		    
+		     
+	</body>
+	<script>
+		$("#send").on("click",function(){
+			$.showLoading("消息发送中...");
+			setTimeout(function() {
+				$.hideLoading();
+				
+				var content=$("#content").val();
+				
+				var html='<div style="width:2.5rem;height:2.5rem;float: right;">';
+				html+='<img src="../images/tx.jpg" alt=""  class="tx">';
+				html+='</div>';
+				html+='<div class="tip right" style="margin-right:20px;float: right;margin-top: 0px;padding: 0.3rem;">';
+				html+='<span style=" word-break:normal; width:auto; display:block; white-space:pre-wrap;word-wrap : break-word ;overflow: hidden ;max-width:15rem;">'+content+'</span>';
+				html+='</div> ';
+				html+='<div style="width: 100%;height: 1px;float: left;"><!--占位--></div> ';
+				$("#list").append(html);
+				$("#list").scrollTop($("#list")[0].scrollHeight); 
+				$("#content").val("");
+				$.toast("发送完成");
+				
+			}, 1000)
+			 
+		});
+		
+		
+		
+		
+		
+		
+	</script>
+</html>

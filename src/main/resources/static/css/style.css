@@ -1,0 +1,162 @@
+html{
+height:100%;
+}  
+body{   
+	max-width:1080px;   /*pc最大宽度*/
+	margin: 0 auto;
+	height:100%;
+	border-right: 1px solid #c5c5c5;
+	border-left: 1px solid #c5c5c5;
+	box-shadow:2px 2px 3px #aaaaaa;
+}
+
+.tx {
+	width: 2.5rem;
+	height: 2.5rem;
+	display: block;
+	border-radius: 5px;
+	margin-right: 0px !important;
+}
+
+.marginl-1 {
+	margin-left: 0.5rem;
+}
+
+.margint-1 {
+	margin-top: 0.5rem;
+}
+
+.marginr-1 {
+	margin-right: 0.5rem;
+}
+
+.marginb-1 {
+	margin-bottom: 0.5rem;
+}
+
+.main-name {
+	position: absolute;
+	top: 0.4rem;
+}
+
+.main-his {
+	position: absolute;
+	top: 1.9rem;
+	font-size: 15px;
+	color: #A6A4A5;
+}
+
+.main-time {
+	position: absolute;
+	top: 0.4rem;
+	right: 10px;
+	font-size: 15px;
+}
+
+.weui-reddot {
+	padding: 0 !important;
+}
+
+.coin-size {
+	font-size: 1.3rem;
+	color: #bab9b9;
+}
+
+.coin-sel {
+	font-size: 1.3rem;
+	color: #07c160;
+}
+
+.line-height {
+	line-height: 2.5rem;
+}
+
+.item1-bac {
+	background-color: #efeff4;
+}
+
+.search {
+	width: 96%;
+	margin-left: 2%;
+	border-radius: 5px;
+	border: none;
+	line-height: 1.5rem;
+	height: 1.5rem;
+	box-shadow: 0px 0px 10px #EEEEEE;
+	margin-top: 1rem;
+	font-size: 0.8rem;
+	 
+}
+.title{
+	text-align: center;width: 100%;font-size:0.9rem;margin-top: 0.3rem;margin-bottom: 1rem;
+}
+
+       .tip {
+            position: relative;
+            background-color: #00D6B1;
+            margin: 20px auto;
+            
+		 
+            height: auto;
+            line-height: 2.0rem;
+            color: #efeff4;
+             
+            border-radius: 10px;
+            font-family: sans-serif;
+        }
+		 
+        .tip:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 8px solid;
+        }
+        .top:after {
+            border-bottom-color: #00D6B1;
+            left: 30%;
+            bottom: 100%;
+            margin-left: -15px;
+        }
+        .right:after {
+            border-left-color: #00D6B1;
+            left: 100%;
+            top: 1.25rem;
+            margin-top: -7px;
+        }
+        .bottom:after {
+            border-top-color: #00D6B1;
+            top: 100%;
+            left: 50%;
+            margin-left: -15px;
+        }
+        .left:after {
+            border-right-color: #00D6B1;
+            top: 1.25rem;
+            right: 100%;
+            margin-top: -9px;
+        }
+		
+			
+ 
+.text {
+	width: 77%;
+	margin-left: 2%;
+	border-radius: 5px;
+	border: none;
+	line-height: 1.5rem;
+	height: 1.5rem;
+	box-shadow: 0px 0px 10px #E0E0E0;
+	margin-top: 0.5rem;
+	font-size: 0.8rem;
+	padding-left: 1%; 
+	padding-right: 1%;
+}
+
+.send{
+	font-size: 1.2rem;
+	position: absolute;
+	top: 0.3rem;
+	right:1.5rem;
+}
+  
