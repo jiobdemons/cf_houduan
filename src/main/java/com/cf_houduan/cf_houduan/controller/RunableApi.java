@@ -1,7 +1,7 @@
-package com.cjcwecha.cjcwecha.controller;
+package com.cf_houduan.cf_houduan.controller;
 
-import com.cjcwecha.cjcwecha.config.TreadTasks;
-import com.cjcwecha.cjcwecha.service.AsyncService;
+import com.cf_houduan.cf_houduan.config.TreadTasks;
+import com.cf_houduan.cf_houduan.service.AsyncService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

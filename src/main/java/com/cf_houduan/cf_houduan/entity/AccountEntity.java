@@ -1,4 +1,4 @@
-package com.cjcwecha.cjcwecha.entity;
+package com.cf_houduan.cf_houduan.entity;
 
 public class AccountEntity {
 

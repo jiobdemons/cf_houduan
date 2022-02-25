@@ -1,4 +1,4 @@
-package com.cjcwecha.cjcwecha.config.service;
+package com.cf_houduan.cf_houduan.config.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

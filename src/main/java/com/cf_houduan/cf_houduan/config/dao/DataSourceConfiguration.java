@@ -1,4 +1,4 @@
-package com.cjcwecha.cjcwecha.config.dao;
+package com.cf_houduan.cf_houduan.config.dao;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.springframework.beans.factory.annotation.Value;

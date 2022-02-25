@@ -1,4 +1,4 @@
-package com.cjcwecha.cjcwecha.service;
+package com.cf_houduan.cf_houduan.service;
 
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;

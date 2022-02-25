@@ -1,4 +1,4 @@
-package com.cjcwecha.cjcwecha.config;
+package com.cf_houduan.cf_houduan.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

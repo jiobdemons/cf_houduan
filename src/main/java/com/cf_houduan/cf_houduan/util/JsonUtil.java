@@ -1,4 +1,4 @@
-package com.cjcwecha.cjcwecha.util;
+package com.cf_houduan.cf_houduan.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JavaType;

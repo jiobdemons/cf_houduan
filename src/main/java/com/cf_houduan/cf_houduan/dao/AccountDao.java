@@ -1,5 +1,5 @@
-package com.cjcwecha.cjcwecha.dao;
-        import com.cjcwecha.cjcwecha.entity.AccountEntity;
+package com.cf_houduan.cf_houduan.dao;
+        import com.cf_houduan.cf_houduan.entity.AccountEntity;
         import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

@@ -1,8 +1,7 @@
-package com.cjcwecha.cjcwecha.controller;
+package com.cf_houduan.cf_houduan.controller;
 
-import com.cjcwecha.cjcwecha.entity.AccountEntity;
-import com.cjcwecha.cjcwecha.service.AccountService;
-import com.cjcwecha.cjcwecha.util.ReadExcel;
+import com.cf_houduan.cf_houduan.service.AccountService;
+import com.cf_houduan.cf_houduan.util.ReadExcel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.stereotype.Controller;

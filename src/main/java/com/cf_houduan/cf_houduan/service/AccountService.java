@@ -1,12 +1,10 @@
-package com.cjcwecha.cjcwecha.service;
+package com.cf_houduan.cf_houduan.service;
 
 
-import com.cjcwecha.cjcwecha.dao.AccountDao;
-import com.cjcwecha.cjcwecha.entity.AccountEntity;
+import com.cf_houduan.cf_houduan.dao.AccountDao;
+import com.cf_houduan.cf_houduan.entity.AccountEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.HashMap;
 
 
 @Service

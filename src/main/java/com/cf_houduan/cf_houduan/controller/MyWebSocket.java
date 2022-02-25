@@ -1,4 +1,4 @@
-package com.cjcwecha.cjcwecha.controller;
+package com.cf_houduan.cf_houduan.controller;
 
 import org.springframework.stereotype.Component;
 

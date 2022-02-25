@@ -8,10 +8,10 @@
         <version>2.3.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.cjcwecha</groupId>
-    <artifactId>cjcwecha</artifactId>
+    <groupId>com.cf_houduan</groupId>
+    <artifactId>cf_houduan</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cjcwecha</name>
+    <name>cf_houduan</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
